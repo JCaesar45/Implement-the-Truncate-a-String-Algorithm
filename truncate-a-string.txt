@@ -1,0 +1,21 @@
+** start of script.js **
+
+// Function to truncate a string to a given length with '...' appended if truncated
+function truncateString(str, num) {
+  if (str.length > num) {
+    return str.slice(0, num) + '...';
+  } else {
+    return str;
+  }
+}
+
+// Example test cases
+console.log(truncateString("Hello, world!", 5));  // Output: "Hello..."
+console.log(truncateString("Short", 10));         // Output: "Short"
+console.log(truncateString("Exact", 5));          // Output: "Exact"
+console.log(truncateString("This is a longer sentence.", 10)); // Output: "This is a ..."
+console.log(truncateString("", 3));               // Output: ""
+
+
+** end of script.js **
+
